@@ -1,0 +1,7 @@
+debian/debhelper-build-stamp
+debian/files
+debian/userchroot.debhelper.log
+debian/userchroot.substvars
+debian/userchroot/
+userchroot
+userchroot.o

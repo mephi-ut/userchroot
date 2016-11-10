@@ -1,0 +1,30 @@
+.TH USERCHROOT 1 "NOVEMBER 2016" Linux "User Manuals"
+
+.SH NAME
+userchroot \- switch root, change directory, drop privileges and exec
+.SH SYNOPSIS
+.B userchroot <new-root> <new-working-dir> <executable> [arguments]
+.SH DESCRIPTION
+A simple program to aid in launching chroot/--rbound programs
+using the original user credentials. This program is supposed to
+be used with suid-bit set (chmod u+s).
+
+.PP
+Arguments.
+.TP
+\fBnew\-root
+[mandatory] new root (must start with abs-path)
+.TP
+\fBnew\-working-dir
+[mandatory] new working dir, relative to post-chroot
+.TP
+\fBexecutable
+[mandatory] executable name (related to new working directory) to
+.BR execve (2)
+.TP
+\fBarguments
+[optional] additional parameters passed to target executable
+
+.SH "SEE ALSO"
+chroot(8)
+.PP

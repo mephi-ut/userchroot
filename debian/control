@@ -1,0 +1,23 @@
+Source: userchroot
+Section: admin
+Priority: optional
+Maintainer: Dmitry Yu Okunev <dyokunev@ut.mephi.ru>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: http://koltsoff.com/pub/userchroot/
+#Vcs-Git: git://anonscm.debian.org/collab-maint/userchroot.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/userchroot.git
+
+Package: userchroot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Switch root, change directory, drop privileges and exec
+ userchroot is a small program intended to be run as suid
+ (u+s root) in these cases. It tries to be as careful as
+ possible in order not to run the target executable as root
+ user. It does not support arbitrary user specification,
+ but instead will drop back to normal user privileges of
+ the calling user (undoing what suid-bit has done
+ basically). If dropping root privilege fails (or actually
+ resetting the effective credentials to the normal ones),
+ the target executable will not be executed.

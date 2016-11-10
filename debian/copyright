@@ -1,0 +1,9 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: userchroot
+Source: http://koltsoff.com/pub/userchroot/
+
+Files: *
+Copyright: 2007 Aleksandr Koltsoff <czr@iki.fi>
+License: GPL-2
+ Released under the GNU General Public License version 2 (GPL).
+ Please see http://www.gnu.org/licenses/gpl.txt
